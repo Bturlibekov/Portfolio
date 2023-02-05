@@ -1,0 +1,67 @@
+@mixin imageBackground($repeat, $size, $position) {
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+}
+
+@mixin bg-cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin pseudo() {
+    content: "";
+    display: block;
+}
+
+@function percent($px, $from) {
+    $result: math.div($px, $from) * 100%;
+    @return $result; 
+}
+
+@function rem($px) {
+    $result: math.div($px, 16) + rem;
+    @return $result;
+}
+
+@mixin currency($sum) {
+    &::after {
+        content: "#{sum}";
+    }
+}
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin flex-v-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin flex-h-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-vertical-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin flex-vertical-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

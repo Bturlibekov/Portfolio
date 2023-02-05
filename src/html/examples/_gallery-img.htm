@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col tooltip bottom" title="bottom Tooltip">
+        <a data-fslightbox="gallery" href="https://loremflickr.com/640/360">&times;</a>
+        <a data-fslightbox="gallery" href="./img/macbook-2.jpg"></a>
+        <a data-fslightbox="gallery" href="./img/macbook-3.jpg"></a>
+    </div>
+    <div class="col">
+        <a data-fslightbox="gal-2" href="./img/macbook.jpg">&times;</a>
+        <a data-fslightbox="gal-2" href="./img/macbook-2.jpg"></a>
+        <a data-fslightbox="gal-2" href="https://placekitten.com/640/360"></a>
+    </div>
+    <div class="col">
+        <a href="#" class="link" style="color: red;">gal-3</a>
+    </div>
+    <div class="col">
+        <a href="#" class="link" style="color: red;">gal-4</a>
+    </div>
+</div>
+
+<style>
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px;
+        grid-gap: 0 30px;
+    }
+
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: skyblue;
+    }
+
+    .col a {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+</style>

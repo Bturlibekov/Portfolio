@@ -1,0 +1,32 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "./base/reset";
+@import "./base/base";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/scroll";
+@import "./base/svg-icons";
+// @import "./base/title";
+// @import "./base/button";
+// @import "./base/input";
+// @import "./base/check";
+// @import "./base/radio";
+@import "./base/tooltips";
+// @import "./base/preloader";
+// @import "./base/nouslider";
+// @import "./libs/modal";
+// @import "./libs/accordion";
+// @import "./libs/range-slider";
+// @import "./libs/product-slider";
+// @import "./libs/animate-scroll";
+@import "./libs/modules";
+// @import "./libs/simplebar";
+// @import "./libs/select";
+
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/works";
+@import "./sections/about";
+@import "./sections/footer";
+
+@import "./fonts/fonts";
+// @import "./fonts/icon";

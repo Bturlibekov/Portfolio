@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("html/sections/_head.htm", { title: "Главная" })
+
+<body>
+  <div class="wrapper">
+    @@include("html/sections/_header.htm", {})
+    <main class="main__page">
+      @@include("html/sections/_hero.htm")
+      @@include("html/sections/_works.htm")
+      @@include("html/sections/_about.htm")
+    </main>
+    @@include("html/sections/_footer.htm", {})
+  </div>
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>
